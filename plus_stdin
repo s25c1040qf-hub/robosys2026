@@ -13,10 +13,6 @@ x = 0
 for line in sys.stdin:
     line = line.rstrip()
     x += tonum(line)
-=======
-        x += int(line)    #intは文字列を整数に（失敗すると例外発生）
-    except ValueError:    #第3回で見たエラーの名前
-        x += float(line.rstrip())
->>>>>>> 1dadd3b92507a676ad90ad1bf159c551a17b6274
+
 
 print(x)
